@@ -1,0 +1,2 @@
+(window["webpackJsonp_webpack_vue2"]=window["webpackJsonp_webpack_vue2"]||[]).push([["chunk-2d0a511e"],{"08aa":function(e,t,n){"use strict";n.r(t);var a=function(){var e=this;e._self._c;return e._m(0)},l=[function(){var e=this,t=e._self._c;return t("div",[t("h2",[e._v("Detail")]),t("h2",[e._v("Detail")]),t("h2",[e._v("Detail")]),t("h2",[e._v("Detail")])])}],u={name:"detail",mounted(){console.log(123,this.$route)}},i=u,c=n("1bd1"),o=Object(c["a"])(i,a,l,!1,null,null,null);t["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d0a511e.js.map

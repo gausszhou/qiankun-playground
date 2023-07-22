@@ -1,0 +1,2 @@
+(window["webpackJsonp_webpack_vue2"]=window["webpackJsonp_webpack_vue2"]||[]).push([["chunk-2d0deca6"],{"86c5":function(e,a,n){"use strict";n.r(a);var t=function(){var e=this,a=e._self._c;return a("div",[a("iframe",{attrs:{loading:"lazy",src:e.pdfLink,width:"800",height:"600",frameborder:"0"}})])},c=[];console.log(window.__webpack_public_path__);const _=window.__webpack_public_path__;var i={data(){return{pdfLink:_+"/test.pdf"}}},p=i,d=n("1bd1"),r=Object(d["a"])(p,t,c,!1,null,null,null);a["default"]=r.exports}}]);
+//# sourceMappingURL=chunk-2d0deca6.js.map
