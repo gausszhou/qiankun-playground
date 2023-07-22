@@ -1,5 +1,5 @@
 import { registerMicroApps } from "qiankun";
-import { base as base_ } from "../../../config";
+import { base as base_ } from "../../../config.json";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 
@@ -24,6 +24,10 @@ const apps = [
   {
     name: "vite_vue3",
     entry: base ? `${base}vite_vue3/` : "//localhost:9528"
+  },
+  {
+    name: "webpack_vue2",
+    entry: base ? `${base}webpack_vue2/` : "//localhost:9529"
   }
 ];
 

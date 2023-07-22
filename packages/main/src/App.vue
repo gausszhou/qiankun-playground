@@ -6,6 +6,7 @@
         <li class="menu-item" ><router-link style="color: #087ea4" to="/vite_react">vite-react</router-link></li>
         <li class="menu-item" ><router-link style="color: #34495e" to="/vite_vue2">vite-vue2</router-link></li>
         <li class="menu-item" ><router-link style="color: #42b883" to="/vite_vue3">vite-vue3</router-link></li>
+        <li class="menu-item" ><router-link style="color: #34495e" to="/webpack_vue2">webapck-vue2</router-link></li>
       </ul>
     </div>
     <router-view></router-view>

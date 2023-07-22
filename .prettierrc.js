@@ -5,7 +5,7 @@ module.exports = {
   useTabs: false,
   semi: true,
   singleQuote: false,
-  trailingComma: "none",
+  trailingComma: "all",
   bracketSpacing: true,
   arrowParens: "avoid",
   htmlWhitespaceSensitivity: "ignore"
