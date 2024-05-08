@@ -11,10 +11,10 @@ module.exports = {
   outputDir: "../../dist/" + name,
   // 配置相对路径
   publicPath: base ? `${base}${name}/` : "/",
-  // 取消生成map文件
-  productionSourceMap: true,
-  // 去除文件哈希值
-  filenameHashing: false,
+  // 生成map文件
+  productionSourceMap: false,
+  // 文件携带哈希值
+  filenameHashing: true,
   configureWebpack: {
     output: {
       library: name,

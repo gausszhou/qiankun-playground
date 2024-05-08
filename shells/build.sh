@@ -20,6 +20,10 @@ pnpm --filter vite_vue3 build
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "pnpm success in $time"
 
+pnpm --filter vite_es_vue3 build
+time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "pnpm success in $time"
+
 pnpm --filter webpack_vue2 build
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "pnpm success in $time"

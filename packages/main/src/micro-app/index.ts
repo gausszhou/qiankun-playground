@@ -26,6 +26,10 @@ const apps = [
     entry: base ? `${base}vite_vue3/` : "//localhost:9528"
   },
   {
+    name: "vite_es_vue3",
+    entry: base ? `${base}vite_es_vue3/` : "//localhost:9529"
+  },
+  {
     name: "webpack_vue2",
     entry: base ? `${base}webpack_vue2/` : "//localhost:9529"
   }

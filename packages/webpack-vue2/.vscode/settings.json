@@ -1,7 +1,0 @@
-{
-  "i18n-ally.localesPaths": [
-    "public/lang",
-    "src/lang",
-    "public/mock/lang"
-  ]
-}
