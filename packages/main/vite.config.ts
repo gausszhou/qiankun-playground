@@ -6,7 +6,7 @@ import { base } from '../config.json';
 export default defineConfig({
   base: base ? base : '/',
   build: {
-    outDir: '../../dist'
+    outDir: '../../dist/qiankun-playground'
   },
   plugins: [vue()],
 })

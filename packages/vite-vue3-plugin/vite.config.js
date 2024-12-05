@@ -7,7 +7,7 @@ export default {
   // / + vite_vue3p + / => /vite_vue3p/
   base: base ? `${base}${packageJson.name}/` : '/',
   build: {
-    outDir: '../../dist/' + packageJson.name
+    outDir: '../../dist/qiankun-playground/' + packageJson.name
   },
   server: {
     open: false,

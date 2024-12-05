@@ -8,7 +8,7 @@ module.exports = {
       "Access-Control-Allow-Origin": "*"
     }
   },
-  outputDir: "../../dist/" + name,
+  outputDir: "../../dist/qiankun-playground/" + name,
   // 配置相对路径
   publicPath: base ? `${base}${name}/` : "/",
   // 生成map文件

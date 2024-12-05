@@ -11,15 +11,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vitejs/plugin-vue": "^3.0.3",
     "nprogress": "^0.2.0",
-    "terser": "^5.19.1",
-    "vite": "^3.0.9",
-    "vite-plugin-qiankun": "^1.0.15",
     "vue": "^3.2.37",
     "vue-router": "4"
   },
   "devDependencies": {
-    "@vitejs/plugin-legacy": "^2.3.1"
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vitejs/plugin-legacy": "^2.3.1",
+    "terser": "^5.19.1",
+    "vite": "^3.0.9",
+    "vite-plugin-qiankun": "^1.0.15"
   }
 }

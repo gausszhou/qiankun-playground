@@ -9,7 +9,7 @@ import packageJson from './package.json';
 export default defineConfig({
   base: base ? `${base}${packageJson.name}/` : '/',
   build: {
-    outDir: '../../dist/' + packageJson.name
+    outDir: '../../dist/qiankun-playground/' + packageJson.name
   },
   server: {
     open: false,

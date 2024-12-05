@@ -8,6 +8,10 @@ pnpm --filter main build
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "pnpm success in $time"
 
+pnpm --filter vue-memory-leak build
+time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "pnpm success in $time"
+
 pnpm --filter vite_react build
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "pnpm success in $time"
