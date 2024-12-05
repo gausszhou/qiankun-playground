@@ -8,6 +8,7 @@
         <li class="menu-item" ><router-link style="color: #42b883" to="/vite_vue3">vite-vue3</router-link></li>
         <li class="menu-item" ><router-link style="color: #42b883" to="/vite_es_vue3">vite-vue3-plugin</router-link></li>
         <li class="menu-item" ><router-link style="color: #34495e" to="/webpack_vue2">webapck-vue2</router-link></li>
+        <li class="menu-item" ><router-link style="color: #34495e" to="/vue-memory-leak">vue-memory-leak</router-link></li>
       </ul>
     </div>
     <router-view></router-view>

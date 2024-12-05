@@ -31,7 +31,11 @@ const apps = [
   },
   {
     name: "webpack_vue2",
-    entry: base ? `${base}webpack_vue2/` : "//localhost:9529"
+    entry: base ? `${base}webpack_vue2/` : "//localhost:9530"
+  },
+  {
+    name: "vue-memory-leak",
+    entry: base ? `${base}vue-memory-leak/` : "//localhost:9531"
   }
 ];
 
