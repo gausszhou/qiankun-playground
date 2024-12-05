@@ -5,7 +5,7 @@
       <MainMenu class="menu" />  
       <MainContent class="content" />  
     </div>
-    <Footer />  
+    <Footer />
   </div>  
 </template>  
 
@@ -33,7 +33,7 @@ export default {
   color: #2c3e50;  
 }  
 .app-body {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 156px);
   display: flex;
 }
 .app-body .menu {

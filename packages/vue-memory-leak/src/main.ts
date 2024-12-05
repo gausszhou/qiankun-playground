@@ -12,12 +12,29 @@ let app: any = null;
 let router: any = null;
 
 const render = (props: any) => {
-  const { container, base } = props;
+  const { container, base, progress } = props;
   router = createRouter({
     history: createWebHashHistory(),
     routes: createRoutes(base)
   });
+  router.beforeEach((to: any, from: any, next: any) => {
+    console.log(from, to);
+    progress.start();
+    console.log("vite-vue3 beforeEach");
+    next();
+  });
+  router.afterEach(() => {
+    progress.done();
+    console.log("vite-vue3 afterEach");
+  });
   app = createApp(App);
+  app.mixin({
+    data() {
+      return {
+        appendTo: '#app-mem'
+      }
+    }
+  })
   app.use(ElementPlus)
   app.use(router);
   app.mount(container?.querySelector("#app") ?? document.querySelector("#app"));
@@ -38,6 +55,8 @@ if (qiankunWindow.__POWERED_BY_QIANKUN__) {
     async unmount() {
       console.log("[qiankun] unmount", packageJson.name);
       router.listening = false;
+      app = null;
+      router = null;
       console.log("[qiankun] unmount router", router);
     },
     async update() {

@@ -25,18 +25,16 @@ function createRouter(base) {
 
 let app = null;
 let router = null;
-let clearBeforeEach = null;
-let clearAfterEach = null;
 
 const render = (props = {}) => {
   const { container, base, progress } = props;
   router = createRouter(base);
-  clearBeforeEach = router.beforeEach((to, from, next) => {
+  router.beforeEach((to, from, next) => {
     progress.start();
     console.log("[app] webpack-vue2 beforeEach");
     next();
   });
-  clearAfterEach = router.afterEach(() => {
+  router.afterEach(() => {
     progress.done();
     console.log("[app] webpack-vue2 afterEach");
   });
@@ -64,6 +62,4 @@ export async function unmount() {
   console.log("[app] vue app unmount");
   app = null;
   router = null;
-  clearBeforeEach = null;
-  clearAfterEach = null;
 }

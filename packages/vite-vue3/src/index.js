@@ -19,8 +19,6 @@ function createRoutes(base = "") {
 
 let app = null;
 let router = null;
-let clearBeforeEach = null;
-let clearAfterEach = null;
 
 const render = props => {
   const { container, base, progress } = props;
@@ -28,12 +26,12 @@ const render = props => {
     history: createWebHashHistory(),
     routes: createRoutes(base)
   });
-  clearBeforeEach = router.beforeEach((to, from, next) => {
+  router.beforeEach((to, from, next) => {
     progress.start();
     console.log("vite-vue3 beforeEach");
     next();
   });
-  clearAfterEach = router.afterEach(() => {
+  router.afterEach(() => {
     progress.done();
     console.log("vite-vue3 afterEach");
   });
@@ -56,6 +54,8 @@ if (microApp.__POWERED_BY_QIANKUN__) {
     unmount(props) {
       console.log("[qiankun] unmount", packageJson.name);
       router.listening = false;
+      app = null;
+      router = null;
       console.log("[qiankun] unmount router", router);
     }
   });

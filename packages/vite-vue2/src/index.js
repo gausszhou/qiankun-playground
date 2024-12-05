@@ -30,18 +30,16 @@ function createRouter(base) {
 
 let app = null;
 let router = null;
-let clearBeforeEach = null;
-let clearAfterEach = null;
 
 const render = (props = {}) => {
   const { container, base, progress } = props;
   router = createRouter(base);
-  clearBeforeEach = router.beforeEach((to, from, next) => {
+  router.beforeEach((to, from, next) => {
     progress.start();
     console.log("vite-vue2 beforeEach");
     next();
   });
-  clearAfterEach = router.afterEach(() => {
+  router.afterEach(() => {
     progress.done();
     console.log("vite-vue2 afterEach");
   });
@@ -64,8 +62,8 @@ if (microApp.__POWERED_BY_QIANKUN__) {
     },
     unmount(props) {
       console.log("[qiankn] unmount", packageJson.name);
-      router.beforeHooks = [];
-      router.afterHooks = [];
+      app = null;
+      router = null;
       console.log("[qiankn] unmount router", router);
     }
   });
