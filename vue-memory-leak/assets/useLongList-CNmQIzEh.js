@@ -1,0 +1,1 @@
+import{b as r,n as e}from"./index-Cz-h13Nl.js";function o(t,n){return Array.from({length:t}).map(()=>n())}function u(t=1e3){const n=r([]);return e(()=>{n.value=o(t,()=>"0123456789")}),{longList:n}}export{u};
