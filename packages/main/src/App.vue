@@ -3,12 +3,14 @@
     <div class="header">
       <ul class="menu">
         <li class="menu-item" ><router-link style="color: #646cff;" to="/main">main</router-link></li>
-        <li class="menu-item" ><router-link style="color: #087ea4" to="/vite_react">vite-react</router-link></li>
-        <li class="menu-item" ><router-link style="color: #34495e" to="/vite_vue2">vite-vue2</router-link></li>
-        <li class="menu-item" ><router-link style="color: #42b883" to="/vite_vue3">vite-vue3</router-link></li>
-        <li class="menu-item" ><router-link style="color: #42b883" to="/vite_es_vue3">vite-vue3-plugin</router-link></li>
-        <li class="menu-item" ><router-link style="color: #34495e" to="/webpack_vue2">webapck-vue2</router-link></li>
-        <li class="menu-item" ><router-link style="color: #34495e" to="/vue-memory-leak">vue-memory-leak</router-link></li>
+        <li class="menu-item" ><router-link style="color: #34495e" to="/vite-es-vue2">vite-es-vue2</router-link></li>
+        <li class="menu-item" ><router-link style="color: #42b883" to="/vite-es-vue3">vite-es-vue3</router-link></li>
+        <li class="menu-item" ><router-link style="color: #087ea4" to="/vite-react">vite-react</router-link></li>
+        <li class="menu-item" ><router-link style="color: #34495e" to="/vite-vue2">vite-vue2</router-link></li>
+        <li class="menu-item" ><router-link style="color: #42b883" to="/vite-vue3">vite-vue3</router-link></li>
+        <!-- <li class="menu-item" ><router-link style="color: #34495e" to="/webpack-react">webapck-react</router-link></li> -->
+        <li class="menu-item" ><router-link style="color: #34495e" to="/webpack-vue2">webapck-vue2</router-link></li>
+        <!-- <li class="menu-item" ><router-link style="color: #34495e" to="/webpack-vue3">webapck-vue3</router-link></li> -->
       </ul>
     </div>
     <router-view></router-view>

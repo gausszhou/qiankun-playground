@@ -1,6 +1,5 @@
-import legacy from '@vitejs/plugin-legacy'; // need this
 import vue from '@vitejs/plugin-vue2';
-import { legacyQiankun } from 'vite-plugin-legacy-qiankun';
+import qiankun from 'vite-plugin-qiankun';
 import { base } from '../config';
 import packageJson from './package.json';
 
@@ -11,18 +10,10 @@ export default {
   },
   server: {
     open: false,
-    port: 8002
+    port: 7001
   },
   plugins: [
     vue(),
-    legacy({
-      targets: {
-        "chrome": "58",
-      }
-    }),
-    legacyQiankun({
-      name: 'vite-vue2',
-      devSandbox: true
-    })
+    qiankun(packageJson.name)
   ]
 }

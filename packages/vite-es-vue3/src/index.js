@@ -1,11 +1,10 @@
-import App from "./App.vue";
+import { qiankunWindow, renderWithQiankun } from 'vite-plugin-qiankun/dist/helper';
 import { createApp } from "vue";
 import { createRouter, createWebHashHistory } from "vue-router";
-import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper';
 import packageJson from "../package.json";
-import Home from "./views/Home.vue";
+import App from "./App.vue";
 import About from "./views/About.vue";
-
+import Home from "./views/Home.vue";
 
 function createRoutes(base = "") {
   return [
@@ -25,12 +24,12 @@ const render = props => {
   });
   router.beforeEach((to, from, next) => {
     progress.start();
-    console.log("vite-vue3 beforeEach");
+    console.log("vite-es-vue3 beforeEach");
     next();
   });
   router.afterEach(() => {
     progress.done();
-    console.log("vite-vue3 afterEach");
+    console.log("vite-es-vue3 afterEach");
   });
   app = createApp(App);
   app.use(router);

@@ -14,29 +14,37 @@ console.log("[once] base", base);
 
 const apps = [
   {
-    name: "vite_react",
-    entry: base ? `${base}vite_react/` : "//localhost:9526"
+    name: "vite-es-vue2",
+    entry: base ? `${base}vite-es-vue2/` : "//localhost:7001",
   },
   {
-    name: "vite_vue2",
-    entry: base ? `${base}vite_vue2/` : "//localhost:9527"
+    name: "vite-es-vue3",
+    entry: base ? `${base}vite-es-vue3/` : "//localhost:7002",
   },
   {
-    name: "vite_vue3",
-    entry: base ? `${base}vite_vue3/` : "//localhost:9528"
+    name: "vite-react",
+    entry: base ? `${base}vite-react/` : "//localhost:8001",
   },
   {
-    name: "vite_es_vue3",
-    entry: base ? `${base}vite_es_vue3/` : "//localhost:9529"
+    name: "vite-vue2",
+    entry: base ? `${base}vite-vue2/` : "//localhost:8004",
   },
   {
-    name: "webpack_vue2",
-    entry: base ? `${base}webpack_vue2/` : "//localhost:9530"
+    name: "vite-vue3",
+    entry: base ? `${base}vite-vue3/` : "//localhost:8005",
   },
   {
-    name: "vue-memory-leak",
-    entry: base ? `${base}vue-memory-leak/` : "//localhost:9531"
-  }
+    name: "webpack-react",
+    entry: base ? `${base}webpack-react/` : "//localhost:9001",
+  },
+  {
+    name: "webpack-vue2",
+    entry: base ? `${base}webpack-vue2/` : "//localhost:9002",
+  },
+  {
+    name: "webpack-vue3",
+    entry: base ? `${base}webpack-vue3/` : "//localhost:9003",
+  },
 ];
 
 function getMicroApps(apps: any[]) {
@@ -48,8 +56,8 @@ function getMicroApps(apps: any[]) {
       activeRule: getActiveRule("#/" + app.name),
       props: {
         base: "/" + app.name,
-        progress: NProgress
-      }
+        progress: NProgress,
+      },
     };
   });
 }
@@ -70,7 +78,7 @@ const hooks = {
   afterUnmount: async (app: any) => {
     NProgress.done();
     console.log("[hook] afterUnmount ", app.name);
-  }
+  },
 };
 
 export function registerQiankun() {

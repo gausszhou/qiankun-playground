@@ -3,7 +3,7 @@ const { name } = require("./package.json");
 
 module.exports = {
   devServer: {
-    port: 9529,
+    port: 9002,
     headers: {
       "Access-Control-Allow-Origin": "*"
     }

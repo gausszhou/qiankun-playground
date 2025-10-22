@@ -1,1 +1,1 @@
-# Webpack + Vue
+# Vue2 + Webpack

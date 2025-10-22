@@ -1,18 +1,17 @@
-import vue from '@vitejs/plugin-vue'
-import legacy from '@vitejs/plugin-legacy' // need this
-import { legacyQiankun } from 'vite-plugin-legacy-qiankun'
-import { base } from '../config'
+import legacy from '@vitejs/plugin-legacy'; // need this
+import vue from '@vitejs/plugin-vue';
+import { legacyQiankun } from 'vite-plugin-legacy-qiankun';
+import { base } from '../config';
 import packageJson from './package.json';
 
 export default {
-  // / + vite_vue3 + / => /vite_vue3/
   base: base ? `${base}${packageJson.name}/` : '/',
   build: {
     outDir: '../../dist/qiankun-playground/' + packageJson.name
   },
   server: {
     open: false,
-    port: 9528
+    port: 8003
   },
   plugins: [
     vue(),
@@ -22,7 +21,7 @@ export default {
       }
     }),
     legacyQiankun({ 
-      name: 'vite_vue3',
+      name: 'vite-vue3',
       devSandbox: true
     }),
   ]
