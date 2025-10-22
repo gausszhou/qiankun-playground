@@ -35,3 +35,7 @@ echo "pnpm success in $time"
 pnpm --filter webpack-vue2 build
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "pnpm success in $time"
+
+pnpm --filter webpack-vue3 build
+time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "pnpm success in $time"
