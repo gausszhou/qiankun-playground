@@ -2,8 +2,8 @@ import './public-path';
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
-import Home from "./views/Home.vue";
 import About from "./views/About.vue";
+import Home from "./views/Home.vue";
 
 Vue.use(VueRouter);
 
@@ -30,12 +30,12 @@ const render = (props = {}) => {
   const { container, base, progress } = props;
   router = createRouter(base);
   router.beforeEach((to, from, next) => {
-    progress.start();
+    progress?.start();
     console.log("[app] webpack-vue2 beforeEach");
     next();
   });
   router.afterEach(() => {
-    progress.done();
+    progress?.done();
     console.log("[app] webpack-vue2 afterEach");
   });
   app = new Vue({

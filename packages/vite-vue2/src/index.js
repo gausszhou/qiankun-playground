@@ -35,12 +35,12 @@ const render = (props = {}) => {
   const { container, base, progress } = props;
   router = createRouter(base);
   router.beforeEach((to, from, next) => {
-    progress.start();
+    progress?.start();
     console.log("vite-vue2 beforeEach");
     next();
   });
   router.afterEach(() => {
-    progress.done();
+    progress?.done();
     console.log("vite-vue2 afterEach");
   });
   app = new Vue({

@@ -27,12 +27,12 @@ const render = props => {
     routes: createRoutes(base)
   });
   router.beforeEach((to, from, next) => {
-    progress.start();
+    progress?.start();
     console.log("vite-vue3 beforeEach");
     next();
   });
   router.afterEach(() => {
-    progress.done();
+    progress?.done();
     console.log("vite-vue3 afterEach");
   });
   app = createApp(App);

@@ -13,14 +13,11 @@
   "dependencies": {
     "nprogress": "^0.2.0",
     "vue": "^2.7.10",
-    "vue-router": "3"
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-legacy": "^2.3.1",
-    "@vitejs/plugin-vue2": "^2.0.1",
-    "vite-plugin-legacy-qiankun": "^0.0.12",
-    "vite-plugin-qiankun": "^1.0.15",
-    "terser": "^5.19.1",
-    "vite": "^3.0.9"
+    "@vitejs/plugin-vue2": "^2.3.3",
+    "vite": "^5.0.0",
+    "vite-plugin-qiankun": "^1.0.15"
   }
 }

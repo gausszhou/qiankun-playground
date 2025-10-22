@@ -13,14 +13,20 @@ const base: string = (process as any).env.NODE_ENV === "development" ? "" : base
 console.log("[once] base", base);
 
 const apps = [
+  // vite es module
+  {
+    name: "vite-es-react",
+    entry: base ? `${base}vite-es-react/` : "//localhost:7001",
+  },
   {
     name: "vite-es-vue2",
-    entry: base ? `${base}vite-es-vue2/` : "//localhost:7001",
+    entry: base ? `${base}vite-es-vue2/` : "//localhost:7002",
   },
   {
     name: "vite-es-vue3",
-    entry: base ? `${base}vite-es-vue3/` : "//localhost:7002",
+    entry: base ? `${base}vite-es-vue3/` : "//localhost:7003",
   },
+  // vite legacy
   {
     name: "vite-react",
     entry: base ? `${base}vite-react/` : "//localhost:8001",
@@ -33,6 +39,7 @@ const apps = [
     name: "vite-vue3",
     entry: base ? `${base}vite-vue3/` : "//localhost:8005",
   },
+  // webpack
   {
     name: "webpack-react",
     entry: base ? `${base}webpack-react/` : "//localhost:9001",

@@ -10,7 +10,7 @@ export default {
   },
   server: {
     open: false,
-    port: 7001
+    port: 7002
   },
   plugins: [
     vue(),
